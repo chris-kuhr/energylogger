@@ -42,9 +42,9 @@ def get_data():
         elif(i==11):
             log_current = float(float(v2[0])/100)
         elif(i==12):
-            log_power = float(float(v2[0])/100)
+            log_power = float(float(v2[0])/466)
         elif(i==13):
-            log_energy = float(float(v2[0])/1000)
+            log_energy = float(float(v2[0])/25600)
      
     ttime = time.localtime()
     log_string = "%s.%s.%s-%s:%s:%s;%sV;%sA;%sW;%skWh;\n" %(ttime[2],ttime[1],ttime[0],ttime[3],ttime[4],ttime[5],log_voltage,log_current,log_power,log_energy)
